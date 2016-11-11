@@ -1,0 +1,28 @@
+{
+  "name": "malta-sass",
+  "version": "0.0.5",
+  "description": "Malta plugin to live compile sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://fedeghe@github.com/fedeghe/malta-sass.git"
+  },
+  "keywords": [
+    "malta",
+    "malta plugin",
+    "malta sass",
+    "malta sass plugin"
+  ],
+  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fedeghe/malta-sass/issues"
+  },
+  "dependencies": {
+    "node-sass": "^3.11.2",
+    "malta": ">=3.0.0"
+  },
+  "main": "./index.js"
+}
