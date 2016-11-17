@@ -10,23 +10,26 @@ function malta_sass(o, options) {
 		name = o.name,
 		start = new Date(),
 		msg,
-		oldname = o.name;
+        pluginName = path.basename(path.dirname(__filename)),
+		oldname = o.name,
+		doErr = function (e) {
+			console.log(('[ERROR on ' + o.name + ' using ' + pluginName + '] :').red());
+			console.dir(e);
+			self.stop();
+		};
 
-	o.content = sass.renderSync({data: o.content + ''}).css + "";
+	try{
+		o.content = sass.renderSync({data: o.content + ''}).css + "";
+	} catch (err) {
+		doErr(err);
+	}
 
 	o.name = o.name.replace(/\.scss$/, '.css');
 
 	return function (solve, reject){
-
-		fs.writeFile(o.name, o.content, function(err) {
-			
-			if (err == null) {
-				msg = 'plugin ' + path.basename(path.dirname(__filename)).white() + ' wrote ' + o.name + ' (' + self.getSize(o.name) + ')';
-			} else {
-				console.log('[ERROR] sass says:');
-				console.dir(err);
-				self.stop();
-			}
+		fs.writeFile(o.name, o.content, function(err) {	
+			err && doErr(err);
+			msg = 'plugin ' + pluginName.white() + ' wrote ' + o.name + ' (' + self.getSize(o.name) + ')';
 			fs.unlink(oldname);
 			solve(o);
 			self.notifyAndUnlock(start, msg);
