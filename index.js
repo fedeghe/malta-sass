@@ -12,7 +12,7 @@ function malta_sass(o, options) {
 		msg,
 		oldname = o.name;
 
-	o.content = sass.renderSync({data: o.content + ''}).css;
+	o.content = sass.renderSync({data: o.content + ''}).css + "";
 
 	o.name = o.name.replace(/\.scss$/, '.css');
 
