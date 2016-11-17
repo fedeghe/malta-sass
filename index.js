@@ -11,24 +11,19 @@ function malta_sass(o, options) {
 		start = new Date(),
 		msg,
         pluginName = path.basename(path.dirname(__filename)),
-		oldname = o.name,
-		doErr = function (e) {
-			console.log(('[ERROR on ' + o.name + ' using ' + pluginName + '] :').red());
-			console.dir(e);
-			self.stop();
-		};
+		oldname = o.name;
 
-	try{
+	try {
 		o.content = sass.renderSync({data: o.content + ''}).css + "";
 	} catch (err) {
-		doErr(err);
+		self.doErr(err, o, pluginName);
 	}
 
 	o.name = o.name.replace(/\.scss$/, '.css');
 
 	return function (solve, reject){
 		fs.writeFile(o.name, o.content, function(err) {	
-			err && doErr(err);
+			err && self.doErr(err, o, pluginName);
 			msg = 'plugin ' + pluginName.white() + ' wrote ' + o.name + ' (' + self.getSize(o.name) + ')';
 			fs.unlink(oldname);
 			solve(o);
