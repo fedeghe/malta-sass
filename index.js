@@ -25,7 +25,7 @@ function malta_sass(o, options) {
 		fs.writeFile(o.name, o.content, function(err) {	
 			err && self.doErr(err, o, pluginName);
 			msg = 'plugin ' + pluginName.white() + ' wrote ' + o.name + ' (' + self.getSize(o.name) + ')';
-			fs.unlink(oldname);
+			fs.unlink(oldname, () => {});
 			solve(o);
 			self.notifyAndUnlock(start, msg);
 		});
