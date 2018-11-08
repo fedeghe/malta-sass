@@ -21,8 +21,8 @@
     "url": "https://github.com/fedeghe/malta-sass/issues"
   },
   "dependencies": {
-    "node-sass": "^3.11.2",
-    "malta": ">=3.8.3"
+    "malta": ">=3.8.14",
+    "node-sass": "^3.13.1"
   },
   "main": "./index.js"
 }
