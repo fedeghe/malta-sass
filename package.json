@@ -1,28 +1,28 @@
 {
-  "name": "malta-sass",
-  "version": "1.0.5",
-  "description": "Malta plugin to live compile sass",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://fedeghe@github.com/fedeghe/malta-sass.git"
-  },
-  "keywords": [
-    "malta",
-    "malta plugin",
-    "malta sass",
-    "malta sass plugin"
-  ],
-  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fedeghe/malta-sass/issues"
-  },
-  "dependencies": {
-    "malta": ">=3.8.14",
-    "node-sass": "^3.13.1"
-  },
-  "main": "./index.js"
+    "name": "malta-sass",
+    "version": "1.0.5",
+    "description": "Malta plugin to live compile sass",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://fedeghe@github.com/fedeghe/malta-sass.git"
+    },
+    "keywords": [
+        "malta",
+        "malta plugin",
+        "malta sass",
+        "malta sass plugin"
+    ],
+    "author": "Federico Ghedina <fedeghe@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/fedeghe/malta-sass/issues"
+    },
+    "dependencies": {
+        "malta": ">=3.8.14",
+        "node-sass": "^3.13.1"
+    },
+    "main": "./index.js"
 }
