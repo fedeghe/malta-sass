@@ -1,24 +1,24 @@
 require('malta').checkDeps('node-sass');
 
-var sass = require("node-sass"),
+const sass = require("node-sass"),
 	path = require('path'),
 	fs = require('fs');
 
 function malta_sass(o, options) {
 
-	var self = this,
-		name = o.name,
+	const self = this,
 		start = new Date(),
-		msg,
         pluginName = path.basename(path.dirname(__filename)),
-		oldname = o.name;
+        oldname = o.name;
+
+    let msg;
 
 	o.name = o.name.replace(/\.scss$/, '.css');
 
-	return function (solve, reject){
+	return (solve, reject) => {
         try {
             o.content = sass.renderSync({data: o.content + ''}).css + "";
-            fs.writeFile(o.name, o.content, function(err) {	
+            fs.writeFile(o.name, o.content, err => {	
                 err && self.doErr(err, o, pluginName);
                 msg = 'plugin ' + pluginName.white() + ' wrote ' + o.name + ' (' + self.getSize(o.name) + ')';
                 fs.unlink(oldname, () => {});

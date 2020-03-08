@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-sass.svg)](http://badge.fury.io/js/malta-sass)
-[![Dependencies](https://david-dm.org/fedeghe/malta-sass.svg)](https://david-dm.org/fedeghe/malta-sass)
 [![npm downloads](https://img.shields.io/npm/dt/malta-sass.svg)](https://npmjs.org/package/malta-sass)
 [![npm downloads](https://img.shields.io/npm/dm/malta-sass.svg)](https://npmjs.org/package/malta-sass)  
 ---  
