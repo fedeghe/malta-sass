@@ -22,7 +22,7 @@
     },
     "dependencies": {
         "malta": "4.1.19",
-        "node-sass": "4.13.1"
+        "node-sass": "7.0.0"
     },
     "main": "./index.js"
 }
