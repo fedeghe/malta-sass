@@ -571,10 +571,10 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-malta@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/malta/-/malta-4.1.3.tgz#142a984cc1a02649e5a0961e6ced54aa3b66e627"
-  integrity sha512-Ate3V94Tyy/YVExgXrna1WF6WsoKMKZZBfymbFVYmxgEva9QonZb5YE3msWfWi6+0JWT3lsPl5NpQ1qosa6xRQ==
+malta@4.1.19:
+  version "4.1.19"
+  resolved "https://registry.yarnpkg.com/malta/-/malta-4.1.19.tgz#0213af7afc66245f75688dd8a931e9f550e7dd8f"
+  integrity sha512-EQT2oG1cKzhPJNBEYvw4UJjY8UdejVpf5WucwarOENKB4hT1A2pD/OzAvX/mlQ9c+OwWndmqjmUHYxvrKBc8kA==
 
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
@@ -839,9 +839,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
